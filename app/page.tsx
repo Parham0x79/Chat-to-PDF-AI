@@ -9,6 +9,8 @@ export default function Home() {
       className="bg-linear-to-bl flex-1 from-white to-red-500
         p-3 sm:p-10"
     >
+      {/* Hero section */}
+
       <div
         className="bg-white xl:max-w-11/12 mx-auto p-6 md:p-24 xl:p-32
           rounded-md drop-shadow-xl"
@@ -77,6 +79,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Features */}
 
         <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
           <dl
