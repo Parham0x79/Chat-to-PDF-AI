@@ -128,3 +128,11 @@
     @apply cursor-pointer active:opacity-60 transition;
   }
 }
+
+.upload-text {
+  @apply text-lg lg:text-xl font-mono text-gray-600 italic;
+}
+
+.main-bg {
+  @apply bg-linear-to-bl flex-1 from-white to-red-500 p-3 sm:p-10;
+}

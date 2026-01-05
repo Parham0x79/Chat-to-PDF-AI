@@ -20,19 +20,19 @@ export const features = [
   },
   {
     name: "Chat Memorization",
-    description: "out AI chatbot remembers previous conversations",
+    description: "our AI chatbot remembers previous conversations",
     icon: BrainCogIcon,
   },
 
   {
     name: "Interactive PDF viewer",
-    description: "Engage with your PDF with AI",
+    description: "Engage with your PDF using AI",
     icon: EyeIcon,
   },
 
   {
     name: "Cloud Backup",
-    description: "Your docoments backed up on the cloud",
+    description: "Your documents are backed up on the cloud",
     icon: ServerCogIcon,
   },
   {
