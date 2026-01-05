@@ -36,7 +36,7 @@ const FileUploader = () => {
             text-gray-600 animate-bounce"
           />
           <p className="upload-text">
-            Drag 'n' drop files here, or click to select files
+            Drag &apos;n&apos; drop files here, or click to select files
           </p>
         </div>
       )}
