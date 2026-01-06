@@ -7,10 +7,6 @@ const Documents = () => {
         gap-5 max-w-7xl mx-auto rounded-md lg:justify-start"
     >
       <PlaceholderDocument />
-      <PlaceholderDocument />
-      <PlaceholderDocument />
-      <PlaceholderDocument />
-      <PlaceholderDocument />
     </div>
   );
 };
