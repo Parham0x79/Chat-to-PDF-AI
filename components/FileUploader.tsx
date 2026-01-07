@@ -3,43 +3,16 @@
 import { CircleArrowDown, RocketIcon } from "lucide-react";
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import { useUploadThing } from "@/lib/uploadthing";
 import { useRouter } from "next/navigation";
 import useUpload from "@/hooks/useUpload";
 
 const FileUploader = () => {
   const [uploading, setUploading] = useState(false);
   const router = useRouter();
-  const { handleUpload, status, progress } = useUpload();
 
-  const { startUpload } = useUploadThing("pdfUploader", {
-    onClientUploadComplete: (res) => {
-      setUploading(false);
-      alert("Upload Completed!");
-      console.log("Files: ", res);
-      // You might redirect the user here later, e.g.:
-      // router.push(`/chat/${res[0].key}`)
-    },
-    onUploadError: (error: Error) => {
-      setUploading(false);
-      alert(`ERROR! ${error.message}`);
-    },
-  });
-
-  const onDrop = useCallback(
-    async (acceptedFiles: File[]) => {
-      const file = acceptedFiles[0];
-
-      setUploading(true);
-
-      await startUpload([file]);
-
-      if (file) {
-        await handleUpload(file);
-      }
-    },
-    [startUpload]
-  );
+  const onDrop = useCallback(async (acceptedFiles: File[]) => {
+    const file = acceptedFiles[0];
+  }, []);
 
   const { getRootProps, getInputProps, isDragActive, isDragAccept, isFocused } =
     useDropzone({

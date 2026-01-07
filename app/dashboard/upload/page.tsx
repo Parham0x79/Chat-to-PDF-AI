@@ -2,7 +2,7 @@ import FileUploader from "@/components/FileUploader";
 
 const UploadPage = () => {
   return (
-    <div className="main-bg min-h-screen">
+    <div className="">
       <FileUploader />
     </div>
   );
